@@ -13,7 +13,7 @@ app.use(express.json());
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/imageperformance", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://mixicek:M1x1c3k1234@cluster0.rbi70.mongodb.net/imageperformance?retryWrites=true&w=majority", {
   useNewUrlParser: true
 });
 
